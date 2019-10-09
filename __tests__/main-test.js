@@ -30,4 +30,15 @@ Discounted prices：7.50(yuan)
 
     expect(console.log).toHaveBeenCalledWith(expectText);
   });
+
+  it('should print text', () => {
+    const expectText = [{barcode: 'ITEM000001'},{barcode: 'ITEM000005'}];
+    expect().loadItems(expectText);
+  });
+
+  it('should print text', () => {
+    const expectText = [''];
+    expect().decodeBarcodes(expectText);
+  });
+
 });
